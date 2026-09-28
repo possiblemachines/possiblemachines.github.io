@@ -34,18 +34,31 @@
             font-family: "VT323", "Courier New", monospace;
             font-size: 52px;
             font-weight: normal;
-            margin: 0 0 30px 0;
+            margin: 0 0 40px 0;
             letter-spacing: 1px;
         }
 
-        .workshop-image {
+        .workshop {
             max-width: 700px;
+        }
+
+        .workshop-title {
+            font-family: "IBM Plex Mono", Consolas, monospace;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+
+        .workshop-image {
+            border: 2px solid #ffffff;
+            display: inline-block;
             margin-bottom: 30px;
         }
 
         .workshop-image img {
             display: block;
-            width: 100%;
+            max-width: 100%;
+            width: auto;
             height: auto;
         }
 
@@ -89,15 +102,23 @@
 
     <h1>#salon01_workshops</h1>
 
-    <div class="workshop-image">
-        <img src="vineeshworkshop.png" alt="#salon01 workshops">
-    </div>
+    <section class="workshop">
 
-    <div class="link">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBXGFHn9HY3q4R870YvnDIO4RDTKp6x-H5imX5vfbsvTpTQw/viewform" target="_blank">
-            [REGISTER_FOR_WORKSHOP]
-        </a>
-    </div>
+        <div class="workshop-title">
+            WORKSHOP 1
+        </div>
+
+        <div class="workshop-image">
+            <img src="vineeshworkshop.png" alt="Workshop 1">
+        </div>
+
+        <div class="link">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBXGFHn9HY3q4R870YvnDIO4RDTKp6x-H5imX5vfbsvTpTQw/viewform" target="_blank">
+                [REGISTER_FOR_DIY_SYNTH_WORKSHOP]
+            </a>
+        </div>
+
+    </section>
 
 </main>
 
