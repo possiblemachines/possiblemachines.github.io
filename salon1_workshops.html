@@ -40,6 +40,7 @@
 
         .workshop {
             max-width: 700px;
+            margin-bottom: 60px;
         }
 
         .workshop-title {
@@ -62,6 +63,21 @@
             height: auto;
         }
 
+        .workshop-description {
+            font-family: "IBM Plex Mono", Consolas, monospace;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .workshop-description p {
+            margin: 0 0 20px 0;
+        }
+
+        .workshop-description strong {
+            font-weight: 500;
+        }
+
         .link {
             font-family: "IBM Plex Mono", Consolas, monospace;
             font-size: 15px;
@@ -80,6 +96,12 @@
             text-decoration: none;
         }
 
+        .divider {
+            border-top: 2px solid #ffffff;
+            margin: 50px 0;
+            max-width: 700px;
+        }
+
         @media (max-width: 600px) {
             body {
                 padding: 30px 20px;
@@ -89,7 +111,8 @@
                 font-size: 38px;
             }
 
-            .link {
+            .link,
+            .workshop-description {
                 font-size: 14px;
             }
         }
@@ -102,6 +125,9 @@
 
     <h1>#salon01_workshops</h1>
 
+
+    <!-- WORKSHOP 1 -->
+
     <section class="workshop">
 
         <div class="workshop-title">
@@ -112,18 +138,102 @@
             <img src="vineeshworkshop(1).png" alt="Workshop 1">
         </div>
 
+        <div class="workshop-description">
+
+            <p>
+                <strong>BIO:</strong><br>
+                <strong>Vineesh Amin</strong> is an artist working across experimental
+                sound, new media, and performance. His practice weaves together
+                custom-built audio-visual instruments, analog and semi-analog
+                synthesizers, and improvised interactive systems. He also creates
+                multisensory, responsive installations shaped through participation,
+                alongside immersive sound experiences that invite audiences to explore
+                new dimensions of sound and perception.
+            </p>
+
+            <p>
+                <strong>DESCRIPTION</strong>
+            </p>
+
+            <p>
+                A hands-on workshop where you’ll build your own small pocket synthesizer
+                from scratch. The synth is a simple, light-sensitive instrument built
+                around an NE555 timer, with two knobs and a light sensor that let you
+                explore pitch, feedback, texture and electronic noise. Together, we’ll
+                assemble the circuit, solder the components, test the instrument, and
+                put it together using custom acrylic panels. No prior electronics or
+                soldering experience is required.
+            </p>
+
+            <p>
+                The workshop is designed as a guided, step-by-step process, so you can
+                learn as you build. Each participant receives a complete kit including
+                all electronic components, perfboard, custom-cut acrylic panels,
+                spacers and hardware. All tools and materials are provided.
+            </p>
+
+            <p>
+                You’ll leave with a working pocket synth that you’ve built yourself,
+                ready to plug in and experiment with.
+            </p>
+
+            <p>
+                <strong>₹2,000 per kit — Limited to 10 participants</strong>
+            </p>
+
+            <p>
+                You don't need to know how to solder. Just come curious and ready to
+                make some noise!
+            </p>
+
+        </div>
+
         <div class="link">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBXGFHn9HY3q4R870YvnDIO4RDTKp6x-H5imX5vfbsvTpTQw/viewform" target="_blank">
                 [REGISTER_FOR_DIY_SYNTH_WORKSHOP]
-            </a><br><br>
-            <a href='possiblemachines.github.io'>back to main</a>
+            </a>
         </div>
-        <div class="archive">
-            
-        </div>
-
 
     </section>
+
+
+    <div class="divider"></div>
+
+
+    <!-- WORKSHOP 2 -->
+
+    <section class="workshop">
+
+        <div class="workshop-title">
+            WORKSHOP 2
+        </div>
+
+        <div class="workshop-image">
+            <img src="jishnuworkshop.png" alt="Workshop 2">
+        </div>
+
+        <div class="workshop-description">
+
+            <p>
+                <strong>BIO:</strong><br>
+                <strong>Jishnu chaudhury</strong> is a creative technologist based in Bangalore, India. 
+            </p>
+
+            <p>
+                <strong>DESCRIPTION:</strong><br>
+                A Projection Mapping workshop for beginners in Touchdesigner by Derivative,<br>
+                covering the basics of the program, getting gigs as well as using llm's. 
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="link">
+        <a href="possiblemachines.github.io">back to main</a>
+    </div>
+
 
 </main>
 
