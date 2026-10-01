@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#SALON01</title>
-<link rel="icon" type="image/png" href="favicon1.png">
+    <link rel="icon" type="image/png" href="favicon1.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=VT323&display=swap" rel="stylesheet">
@@ -37,26 +38,6 @@
             letter-spacing: 1px;
         }
 
-        .ashby {
-            margin: 40px 0;
-        }
-
-        .quote {
-            font-family: "IBM Plex Mono", Consolas, monospace;
-            font-size: 17px;
-            line-height: 1.5;
-            max-width: 600px;
-            margin: 0 0 20px 20px;
-            letter-spacing: -0.2px;
-        }
-
-        .source {
-            font-family: "VT323", "Courier New", monospace;
-            font-size: 18px;
-            color: #cccccc;
-            margin-left: 20px;
-        }
-
         .description {
             border-top: 2px solid #ffffff;
             padding-top: 25px;
@@ -68,17 +49,47 @@
             margin: 0 0 25px 0;
         }
 
+        .lineup {
+            border-top: 2px solid #ffffff;
+            padding-top: 25px;
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .lineup-title {
+            font-family: "IBM Plex Mono", Consolas, monospace;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+        }
+
+        .speaker {
+            margin-bottom: 30px;
+        }
+
+        .speaker-name {
+            font-family: "IBM Plex Mono", Consolas, monospace;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            margin-bottom: 5px;
+        }
+
+        .talk-title {
+            font-size: 27px;
+            line-height: 1.15;
+        }
+
+        .talk-date {
+            font-family: "IBM Plex Mono", Consolas, monospace;
+            font-size: 11px;
+            color: #bbbbbb;
+            margin-top: 6px;
+        }
+
         .past-salons {
             border-top: 2px solid #ffffff;
             padding-top: 25px;
             max-width: 700px;
-        }
-
-        .past-salons-title {
-            font-family: "IBM Plex Mono", Consolas, monospace;
-            font-size: 15px;
-            letter-spacing: 0.5px;
-            margin-bottom: 25px;
         }
 
         .archive {
@@ -95,7 +106,8 @@
             text-underline-offset: 4px;
         }
 
-        a:hover, a:focus {
+        a:hover,
+        a:focus {
             background-color: #ffffff;
             color: #0000aa;
             text-decoration: none;
@@ -110,12 +122,8 @@
                 font-size: 38px;
             }
 
-            .quote, .source {
-                margin-left: 0;
-            }
-
-            .quote {
-                font-size: 15px;
+            .talk-title {
+                font-size: 24px;
             }
         }
     </style>
@@ -127,24 +135,79 @@
 
     <h1>#SALON01</h1>
 
-
     <section class="description">
         <p>
-        a 2 day inaugral event featuring ticketed workshops and free to attend presentations
-        by homegrown talent. stay tuned for the lineup announcement and registration.
-        <br>
-        <br>
-        LOCATION: SAMAGATA FOUNDATION, MG ROAD<br>
-        DATES: 3RD, 4TH OCT, 2026<br>
-        TIME: 10 AM TO 5:00 PM<br>
-        <p/>
+            a 2 day inaugral event featuring ticketed workshops and free to attend presentations
+            by homegrown talent. stay tuned for the lineup announcement and registration.
+            <br><br>
+            LOCATION: SAMAGATA FOUNDATION, MG ROAD<br>
+            DATES: 3RD, 4TH OCT, 2026<br>
+            TIME: 10 AM TO 5:00 PM
+        </p>
+    </section>
+
+
+    <section class="lineup">
+
+        <div class="lineup-title">
+            SPEAKER LINEUP / 4TH OCTOBER, 2026
+        </div>
+
+        <div class="speaker">
+            <div class="speaker-name">PRIYANSHU</div>
+            <div class="talk-title">AN INTRODUCTION TO DEMOSCENE CULTURE</div>
+            <div class="talk-date">4TH OCTOBER, 2026</div>
+        </div>
+
+        <div class="speaker">
+            <div class="speaker-name">NIRAJ PANGARKAR</div>
+            <div class="talk-title">WHEN MACHINES BEGIN MARKMAKING</div>
+            <div class="talk-date">4TH OCTOBER, 2026</div>
+        </div>
+
+        <div class="speaker">
+            <div class="speaker-name">ALLWIN WILLIAMS</div>
+            <div class="talk-title">PROTOTYPING ACROSS AUDIO, VISUALS, AI AND HARDWARE</div>
+            <div class="talk-date">4TH OCTOBER, 2026</div>
+        </div>
+
+        <div class="speaker">
+            <div class="speaker-name">KEDAR BENJAMIN</div>
+            <div class="talk-title">3D PRINTING AND ALGORITHMIC SHOE DESIGN</div>
+            <div class="talk-date">4TH OCTOBER, 2026</div>
+        </div>
+
+        <div class="speaker">
+            <div class="speaker-name">SAKSHAM JAIN &amp; NICO</div>
+            <div class="talk-title">HOW 2 LIVECODE ON THE DANCE FLOOR</div>
+            <div class="talk-date">4TH OCTOBER, 2026</div>
+        </div>
+
+        <div class="speaker">
+            <div class="speaker-name">VEDANT MANWADKAR</div>
+            <div class="talk-title">BACKBENCH ORCHESTRA &amp; DREAM BROADCAST</div>
+            <div class="talk-date">4TH OCTOBER, 2026</div>
+        </div>
+
+        <div class="speaker">
+            <div class="speaker-name">PRIYANKA KOLLURU</div>
+            <div class="talk-title">"YOU ARE WHAT YOU EAT"</div>
+            <div class="talk-date">4TH OCTOBER, 2026</div>
+        </div>
+
+        <div class="speaker">
+            <div class="speaker-name">SHAMMI RAJ BALLA</div>
+            <div class="talk-title">CREATIVE MEDIA OPPORTUNITIES IN INDIA</div>
+            <div class="talk-date">4TH OCTOBER, 2026</div>
+        </div>
 
     </section>
+
 
     <section class="past-salons">
 
         <div class="archive">
-            <a href='possiblemachines.github.io'>back to main</a>
+            <a href="possiblemachines.github.io">back to main</a>
         </div>
 
     </section>
