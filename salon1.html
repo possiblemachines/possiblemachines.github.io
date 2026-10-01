@@ -63,6 +63,14 @@
             margin-bottom: 30px;
         }
 
+        .schedule-note {
+            font-family: "IBM Plex Mono", Consolas, monospace;
+            font-size: 12px;
+            color: #bbbbbb;
+            margin-top: -10px;
+            margin-bottom: 35px;
+        }
+
         .speaker {
             margin-bottom: 30px;
         }
@@ -79,11 +87,38 @@
             line-height: 1.15;
         }
 
+        .talk-time {
+            font-family: "IBM Plex Mono", Consolas, monospace;
+            font-size: 12px;
+            color: #ffffff;
+            margin-top: 8px;
+        }
+
         .talk-date {
             font-family: "IBM Plex Mono", Consolas, monospace;
             font-size: 11px;
             color: #bbbbbb;
-            margin-top: 6px;
+            margin-top: 4px;
+        }
+
+        .lunch {
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+            padding: 15px 0;
+            margin: 35px 0;
+        }
+
+        .lunch-title {
+            font-family: "IBM Plex Mono", Consolas, monospace;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .lunch-time {
+            font-family: "IBM Plex Mono", Consolas, monospace;
+            font-size: 11px;
+            color: #bbbbbb;
+            margin-top: 4px;
         }
 
         .past-salons {
@@ -137,12 +172,14 @@
 
     <section class="description">
         <p>
-            a 2 day inaugral event featuring ticketed workshops and free to attend presentations
-            by homegrown talent. stay tuned for the lineup announcement and registration.
+            a 2 day inaugural event featuring ticketed workshops and free to attend presentations
+            by homegrown talent.
             <br><br>
             LOCATION: SAMAGATA FOUNDATION, MG ROAD<br>
             DATES: 3RD, 4TH OCT, 2026<br>
-            TIME: 10 AM TO 5:00 PM
+            REGISTRATION: 10:30 AM<br>
+            TALKS: 11:00 AM TO 4:13 PM<br>
+            EVENT CLOSES: 5:00 PM
         </p>
     </section>
 
@@ -150,55 +187,96 @@
     <section class="lineup">
 
         <div class="lineup-title">
-            SPEAKER LINEUP / 4TH OCTOBER, 2026
+            [SPEAKER LINEUP]
         </div>
 
-        <div class="speaker">
-            <div class="speaker-name">PRIYANSHU</div>
-            <div class="talk-title">AN INTRODUCTION TO DEMOSCENE CULTURE</div>
-            <div class="talk-date">4TH OCTOBER, 2026</div>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker-name">NIRAJ PANGARKAR</div>
-            <div class="talk-title">WHEN MACHINES BEGIN MARKMAKING</div>
-            <div class="talk-date">4TH OCTOBER, 2026</div>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker-name">ALLWIN WILLIAMS</div>
-            <div class="talk-title">PROTOTYPING ACROSS AUDIO, VISUALS, AI AND HARDWARE</div>
-            <div class="talk-date">4TH OCTOBER, 2026</div>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker-name">KEDAR BENJAMIN</div>
-            <div class="talk-title">3D PRINTING AND ALGORITHMIC SHOE DESIGN</div>
-            <div class="talk-date">4TH OCTOBER, 2026</div>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker-name">SAKSHAM JAIN &amp; NICO</div>
-            <div class="talk-title">HOW 2 LIVECODE ON THE DANCE FLOOR</div>
-            <div class="talk-date">4TH OCTOBER, 2026</div>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker-name">VEDANT MANWADKAR</div>
-            <div class="talk-title">BACKBENCH ORCHESTRA &amp; DREAM BROADCAST</div>
-            <div class="talk-date">4TH OCTOBER, 2026</div>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker-name">PRIYANKA KOLLURU</div>
-            <div class="talk-title">"YOU ARE WHAT YOU EAT"</div>
-            <div class="talk-date">4TH OCTOBER, 2026</div>
-        </div>
 
         <div class="speaker">
             <div class="speaker-name">SHAMMI RAJ BALLA</div>
             <div class="talk-title">CREATIVE MEDIA OPPORTUNITIES IN INDIA</div>
-            <div class="talk-date">4TH OCTOBER, 2026</div>
+            <div class="talk-time">11:00 AM — 11:20 AM</div>
+
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">SAKSHAM JAIN &amp; NICO</div>
+            <div class="talk-title">HOW 2 LIVECODE ON THE DANCE FLOOR</div>
+            <div class="talk-time">11:30 AM — 11:45 AM</div>
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">ALLWIN WILLIAMS</div>
+            <div class="talk-title">PROTOTYPING ACROSS AUDIO, VISUALS, AI AND HARDWARE</div>
+            <div class="talk-time">11:50 AM — 12:10 PM</div>
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">NIRAJ PANGARKAR</div>
+            <div class="talk-title">WHEN MACHINES BEGIN MARKMAKING</div>
+            <div class="talk-time">12:15 PM — 12:30 PM</div>
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">PRIYANSHU</div>
+            <div class="talk-title">AN INTRODUCTION TO DEMOSCENE CULTURE</div>
+            <div class="talk-time">12:30 PM — 12:45 PM</div>
+        </div>
+
+
+        <div class="lunch">
+            <div class="lunch-title">LUNCH</div>
+            <div class="lunch-time">12:45 PM — 1:30 PM</div>
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">PRIYANKA KOLLURU</div>
+            <div class="talk-title">"YOU ARE WHAT YOU EAT"</div>
+            <div class="talk-time">1:45 PM — 2:10 PM</div>
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">KEDAR BENJAMIN</div>
+            <div class="talk-title">3D PRINTING AND ALGORITHMIC SHOE DESIGN</div>
+            <div class="talk-time">2:15 PM — 2:35 PM</div>
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">VEDANT MANWADKAR</div>
+            <div class="talk-title">BACKBENCH ORCHESTRA &amp; DREAM BROADCAST</div>
+            <div class="talk-time">2:40 PM — 3:00 PM</div>
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">ANANYA MISKA</div>
+            <div class="talk-title">CREATIVE TECH ACROSS CONTINENTS</div>
+            <div class="talk-time">3:05 PM — 3:20 PM</div>
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">CHAITALI KRISHNAN</div>
+            <div class="talk-title">QUANTUM HEARTS: A LOOK BEHIND THE WORK</div>
+            <div class="talk-time">3:30 PM — 3:45 PM</div>
+        </div>
+
+
+        <div class="speaker">
+            <div class="speaker-name">VAIBHAV VIVEK</div>
+            <div class="talk-title">PHONOFRAMES: ACCESSIBILITY AND UNDERSTANDING</div>
+            <div class="talk-time">3:55 PM — 4:10 PM</div>
+        </div>
+
+
+        <div class="schedule-note">
+            4:10 PM — 5:00 PM : [MIXER &amp; CLOSE]
         </div>
 
     </section>
