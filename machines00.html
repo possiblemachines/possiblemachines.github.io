@@ -1,12 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Machines00 — Paraware Open Call</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=VT323&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --color-blue: #0B1B94;
@@ -14,14 +17,16 @@
       --bg-main: #F8F9FA;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       min-height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       padding: 24px;
       background: var(--bg-main);
       color: var(--color-blue);
@@ -35,9 +40,12 @@
       background: #fff;
       border: 1px solid #e5e7eb;
       box-shadow: 0 1px 3px rgba(0, 0, 0, .04);
+      min-width: 0;
     }
 
-    header { margin-bottom: 30px; }
+    header {
+      margin-bottom: 30px;
+    }
 
     h1 {
       margin: 0 0 14px;
@@ -56,27 +64,29 @@
       letter-spacing: -.03em;
     }
 
+    /* ASCII artwork */
     .ascii-container {
       width: 100%;
       margin: 28px 0 34px;
-      overflow-x: auto;
-      overflow-y: hidden;
-      scrollbar-width: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
     }
-
-    .ascii-container::-webkit-scrollbar { display: none; }
 
     .ascii-art {
       display: block;
       width: max-content;
-      margin: 0 auto;
+      max-width: none;
+      margin: 0;
       color: var(--color-blue);
       font-family: 'DejaVu Sans Mono', 'Noto Sans Mono', monospace;
-      font-size: clamp(11px, 0.68vw, 11px);
+      font-size: 11px;
       line-height: 1.08;
       font-weight: 400;
       white-space: pre;
       tab-size: 2;
+      transform-origin: center center;
     }
 
     .epigraph {
@@ -104,11 +114,21 @@
     .body-copy {
       font-size: 15px;
       line-height: 1.55;
+      overflow-wrap: anywhere;
     }
 
-    .body-copy p { margin: 0 0 22px; }
-    .body-copy p:last-child { margin-bottom: 0; }
-    .red { color: var(--color-red); font-weight: 600; }
+    .body-copy p {
+      margin: 0 0 22px;
+    }
+
+    .body-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .red {
+      color: var(--color-red);
+      font-weight: 600;
+    }
 
     a {
       color: var(--color-blue);
@@ -119,27 +139,48 @@
       transition: color .2s ease;
     }
 
-    a:hover { color: var(--color-red); }
+    a:hover {
+      color: var(--color-red);
+    }
 
     @media (min-width: 700px) {
-      main { padding: 48px; }
-      .body-copy { font-size: 16px; }
-      .quote { font-size: 16px; }
-      .attribution { font-size: 13px; }
+      main {
+        padding: 48px;
+      }
+
+      .body-copy {
+        font-size: 16px;
+      }
+
+      .quote {
+        font-size: 16px;
+      }
+
+      .attribution {
+        font-size: 13px;
+      }
     }
 
     @media (max-width: 480px) {
-      body { padding: 10px; }
-      main { padding: 22px 16px; }
-      .ascii-container { margin: 22px 0 26px; }
-      .ascii-art {
-        margin-left: 0;
-        font-size: 4px;
+      body {
+        padding: 10px;
       }
-      .body-copy { font-size: 13px; }
+
+      main {
+        padding: 22px 16px;
+      }
+
+      .ascii-container {
+        margin: 22px 0 26px;
+      }
+
+      .body-copy {
+        font-size: 13px;
+      }
     }
   </style>
 </head>
+
 <body>
   <main>
     <header>
@@ -147,13 +188,11 @@
       <p class="subtitle">OPEN CALL: 'PARAWARE'</p>
     </header>
 
-    <!-- Paste your complete Unicode/Braille ASCII art between the <pre> tags below.
-         Keep all spaces and line breaks intact. -->
     <section class="ascii-container" aria-label="Unicode text art">
-      <pre class="ascii-art">
+      <pre class="ascii-art" id="asciiArt">
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⠐⡄⠁⠀⠀⢀⢶⠻⡿⠉⠀⠀⠀
 ⠀⠢⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠌⠀⡀⠂⠸⣞⠀⡄⠀⣷⣠⣄⠐⠁⠁⠈⡀⠀⢀⠀⠀
-⠀⠀⠀⠐⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠃⠀⠀⢄⠄⡠⠀⠜⠁⢰⡀⠂⠉⣦⣽⣿⡏⠄⢆⠒⠀⠐⠀⢰⡤⠀
+⠀⠀⠀⠐⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠃⠀⠀⢄⠄⡠⠀⠜⠁⢰⡀⠂⠉⣦⣽⣿⡏⠄⢆⠒⠀⠐⠀⢰⡤⠀
 ⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⡆⠀⠈⡬⠁⠄⠀⠀⠀⡢⠈⠀⠀⠈⠙⠉⠛⡤⠗⠀⠰⡄⠠⣖⣒⣴
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢐⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠌⡓⣼⡇⠀⠀⢀⠊⢀⠀⠀⠐⣇⠀⢀⡠⢦⣄⣀⡠⠁⣤⣤⡂⠀⠐⣿⣽⣿
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠈⡇⠀⢸⠄⠀⠀⠀⠀⠀⠀⢰⣜⠀⣽⣿⡃⠀⢀⠆⢠⣀⡀⠠⠊⠃⠄⠀⠠⠂⠐⠨⢀⠞⠿⠋⠀⠀⣠⠻⣿⡿
@@ -176,10 +215,10 @@
 ⡀⢘⢟⡷⣿⢦⡊⢝⣦⡙⣯⣦⣍⠹⡛⠿⠷⣦⣔⢮⠧⣻⣷⣵⡙⢻⣾⣿⣿⡿⢿⣿⣿⣇⠀⠀⠙⢄⠀⠀⠀⠀⠀⠄⠀⢱⣄⠎⡹⣧⠐⢹⡄⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠌⠳⢵⠼⣊⢟⣿⣿⣿⣟⣕⠻⣝⢦⡘⠓⢦⣫⡿⠱⡱⡿⣻⡻⣿⣿⠯⣿⣿⡧⠀⠉⠻⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⡮⡃⡙⠄⠻⡖⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠈⠂⠂⠉⠙⢳⡝⣿⣿⣿⣯⠂⡌⠙⡟⡗⡄⣭⢳⡄⠉⡝⢣⡕⠂⡍⠃⠈⢻⣿⡆⠀⠀⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠁⡄⠀⣵⡇⢰⠈⠁⠐⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠈⠂⠠⠀⢀⠐⡉⠛⠝⣆⡄⠀⠀⠑⠠⢨⢉⠛⠛⠂⠉⠊⠤⣩⢚⠀⠀⠈⠛⠄⠀⠀⠀⠀⠀⠀⠀⠀⠐⣆⡀⠀⢨⣺⣮⣧⠘⣥⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠈⠂⠠⠀⢀⠐⡉⠛⠝⣆⡄⠀⠀⠑⠠⢨⢉⠛⠛⠂⠉⠊⠤⣩⢚⠀⠀⠈⠛⠄⠀⠀⠀⠀⠀⠀⠀⠀⠐⣆⡀⠀⢨⣺⣮⣧⠘⣥⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠁⢅⠀⠀⠀⠀⠁⠀⢄⡀⠄⠀⠐⠄⠀⠑⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠘⣾⣦⣼⣫⣿⣿⣇⢳⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠂⠀⠀⠀⠀⠀⠀⠈⠢⠀⠀⠀⣪⢂⡀⣀⠀⠠⡀⠀⠠⡀⠀⢉⠢⣄⡀⠭⠻⣿⣿⡞⠉⠉⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢙⠺⣷⣦⣑⠤⣄⡙⢦⡀⣤⡑⠯⣗⡁⢌⠛⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢙⠺⣷⣦⣑⠤⣄⡙⢦⡀⣤⡑⠯⣗⡁⢌⠛⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠨⠙⠻⢿⣿⣶⣽⣞⡽⣷⡕⠝⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠊⢔⡉⢟⣿⣷⡺⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⡀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⡀⣶⠀⠀⡆⠀
@@ -189,7 +228,7 @@
 
     <section class="epigraph">
       <p class="quote">"Isn't it strange the way the wind makes inanimate objects move?"</p>
-      <p class="attribution">— Gustave Meyrinck, <em>The Golem</em></p>
+      <p class="attribution">— Gustave Meyrink, <em>The Golem</em></p>
     </section>
 
     <section class="body-copy">
@@ -205,36 +244,77 @@
         creative technologists and computational designers to make and exhibit
         hardware artifacts exploring hauntology, possession, high weirdness, and the
         unsettling edge between the living and non-living.
-
-	
       </p>
 
-<p>
-The open call requires that applicants understand the following:<br><br>
-1. This is an exhibition requiring the building of hardware technical systems.<br>
-2. The space is extremely limited to small, interactive artifacts.<br>
-3. While there is flexibility regarding the overall complexity of the final artifact, the open call is not
-interested in purely craft/found object work.<br>
-4. Only interactive systems will be accepted.<br>
-5. This is <strong><u>not</u></strong> an open call for professional media artists, creative technologists or computational designers with 3+ years of experience and/or significant achievements.<br>
-6. The final decision of acceptance rests on the curation team regarding appropriateness of project to the call details. <br>
-7. There will be a limit of only 9 exhibitors as it is the first open call.<br>
-8. Basic power and display technology will be provided, but the fidelity of final work rests on the exhibitor.<br>
-9. Preference will be given to residents from Bangalore or nearby cities due to ease of logistics.
-
-</p>
+      <p>
+        The open call requires that applicants understand the following:
+        <br><br>
+        1. This is an exhibition requiring the building of hardware technical systems.
+        <br>
+        2. The space is extremely limited to small, interactive artifacts.
+        <br>
+        3. While there is flexibility regarding the overall complexity of the final artifact, the open call is not interested in purely craft/found object work.
+        <br>
+        4. Only interactive systems will be accepted.
+        <br>
+        5. This is <strong><u>not</u></strong> an open call for professional media artists, creative technologists or computational designers with 3+ years of experience and/or significant achievements.
+        <br>
+        6. The final decision of acceptance rests on the curation team regarding appropriateness of project to the call details.
+        <br>
+        7. There will be a limit of only 6 exhibitors as it is the first open call.
+        <br>
+        8. Basic power and display technology will be provided, but the fidelity of final work rests on the exhibitor.
+        <br>
+        9. Preference will be given to residents from Bangalore or nearby cities due to ease of logistics.<b
+      </p>
 
       <p>
         APPLY TO &lt;MACHINES_00&gt; AS AN EXHIBITOR
         <a href="https://forms.gle/HKR7oP5NsRDqq29i8" target="_blank" rel="noopener noreferrer">HERE</a>
-<br>
-DEADLINE: 31ST OCTOBER<br><br>
-<p> Read "The Weird and the Eerie" by Mark Fisher <a href = 'https://manetas.com/readbooks/the-weird-and-the-eerie_compress.pdf'> here.</a><br><br>
-<a href='https://possiblemachines.github.io'> Back to main </a>
+        <br>
+        DEADLINE: 31ST OCTOBER
+        <br><br>
+        Read <em>The Weird and the Eerie</em> by Mark Fisher
+        <a href="https://manetas.com/readbooks/the-weird-and-the-eerie_compress.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+        <br><br>
+        <a href="https://possiblemachines.github.io">Back to main</a>
       </p>
-
-
     </section>
   </main>
+
+  <script>
+    /*
+      Scale the artwork to the available width.
+      The art stays centered and no horizontal scrolling is needed.
+    */
+    (() => {
+      const container = document.querySelector('.ascii-container');
+      const art = document.getElementById('asciiArt');
+
+      function fitAscii() {
+        if (!container || !art) return;
+
+        // Reset scaling before measuring the original artwork.
+        art.style.transform = 'none';
+
+        const availableWidth = container.clientWidth;
+        const artWidth = art.scrollWidth;
+
+        if (artWidth > 0 && availableWidth > 0) {
+          const scale = Math.min(1, availableWidth / artWidth);
+          art.style.transform = `scale(${scale})`;
+          container.style.height = `${art.scrollHeight * scale}px`;
+        }
+      }
+
+      window.addEventListener('load', fitAscii);
+      window.addEventListener('resize', fitAscii);
+
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(fitAscii);
+      }
+    })();
+  </script>
 </body>
 </html>
+```
