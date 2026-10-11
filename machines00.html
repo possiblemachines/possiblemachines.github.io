@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machines00 — Paraware Open Call</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-blue: #0B1B94;
+      --color-red: #FF3333;
+      --bg-main: #F8F9FA;
+    }
 
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      background: var(--bg-main);
+      color: var(--color-blue);
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    main {
+      width: 100%;
+      max-width: 760px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .04);
+    }
+
+    header { margin-bottom: 30px; }
+
+    h1 {
+      margin: 0 0 14px;
+      font-family: 'VT323', monospace;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: .95;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: clamp(17px, 3vw, 23px);
+      font-weight: 700;
+      letter-spacing: -.03em;
+    }
+
+    .ascii-container {
+      width: 100%;
+      margin: 28px 0 34px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+    }
+
+    .ascii-container::-webkit-scrollbar { display: none; }
+
+    .ascii-art {
+      display: block;
+      width: max-content;
+      margin: 0 auto;
+      color: var(--color-blue);
+      font-family: 'DejaVu Sans Mono', 'Noto Sans Mono', monospace;
+      font-size: clamp(11px, 0.68vw, 11px);
+      line-height: 1.08;
+      font-weight: 400;
+      white-space: pre;
+      tab-size: 2;
+    }
+
+    .epigraph {
+      border-left: 2px solid var(--color-blue);
+      padding: 5px 0 5px 16px;
+      margin-bottom: 30px;
+    }
+
+    .quote {
+      margin: 0 0 12px;
+      font-size: 15px;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    .attribution {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .body-copy {
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .body-copy p { margin: 0 0 22px; }
+    .body-copy p:last-child { margin-bottom: 0; }
+    .red { color: var(--color-red); font-weight: 600; }
+
+    a {
+      color: var(--color-blue);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 4px;
+      transition: color .2s ease;
+    }
+
+    a:hover { color: var(--color-red); }
+
+    @media (min-width: 700px) {
+      main { padding: 48px; }
+      .body-copy { font-size: 16px; }
+      .quote { font-size: 16px; }
+      .attribution { font-size: 13px; }
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 10px; }
+      main { padding: 22px 16px; }
+      .ascii-container { margin: 22px 0 26px; }
+      .ascii-art {
+        margin-left: 0;
+        font-size: 4px;
+      }
+      .body-copy { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>&lt;MACHINES_00&gt;</h1>
+      <p class="subtitle">OPEN CALL: 'PARAWARE'</p>
+    </header>
+
+    <!-- Paste your complete Unicode/Braille ASCII art between the <pre> tags below.
+         Keep all spaces and line breaks intact. -->
+    <section class="ascii-container" aria-label="Unicode text art">
+      <pre class="ascii-art">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⠐⡄⠁⠀⠀⢀⢶⠻⡿⠉⠀⠀⠀
+⠀⠢⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠌⠀⡀⠂⠸⣞⠀⡄⠀⣷⣠⣄⠐⠁⠁⠈⡀⠀⢀⠀⠀
+⠀⠀⠀⠐⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠃⠀⠀⢄⠄⡠⠀⠜⠁⢰⡀⠂⠉⣦⣽⣿⡏⠄⢆⠒⠀⠐⠀⢰⡤⠀
+⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⡆⠀⠈⡬⠁⠄⠀⠀⠀⡢⠈⠀⠀⠈⠙⠉⠛⡤⠗⠀⠰⡄⠠⣖⣒⣴
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢐⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠌⡓⣼⡇⠀⠀⢀⠊⢀⠀⠀⠐⣇⠀⢀⡠⢦⣄⣀⡠⠁⣤⣤⡂⠀⠐⣿⣽⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠈⡇⠀⢸⠄⠀⠀⠀⠀⠀⠀⢰⣜⠀⣽⣿⡃⠀⢀⠆⢠⣀⡀⠠⠊⠃⠄⠀⠠⠂⠐⠨⢀⠞⠿⠋⠀⠀⣠⠻⣿⡿
+⡀⠀⠀⠀⠑⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⢠⡀⣐⣿⣷⢛⡄⠙⡃⢄⡀⡠⠲⣕⢤⠓⡍⠔⢺⣿⣯⡀⣘⠀⣼⣿⣿⡨⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⡘⠃⡽⢻⠕
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢄⠬⢰⠣⣾⣰⡉⢻⡿⣛⠀⣿⣣⠳⡱⡊⢙⠨⣤⣯⠅⣿⣿⣶⣿⠁⣰⢓⡼⡫⠁⢈⡷⠄⢀⠖⢲⡶⠀⠀⠠⢊⡃⠁⠀⠰⠍⠃⠀
+⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣸⠜⡛⣧⣛⢿⣧⡛⣿⠀⠀⣿⣇⡻⣧⠻⡘⠸⡜⢿⣤⡻⣿⡿⠄⠀⢀⣿⡧⣸⡻⡿⠇⠀⠸⡀⠘⣃⠀⢼⢣⠇⠀⠀⠀⢀⣀⡀⠀
+⢄⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠪⡶⣳⡜⣞⠋⣿⣿⣟⣿⡆⣮⢹⠺⣞⡾⣮⡣⣈⣆⡉⣿⣿⣿⣯⢠⣓⣼⠏⠂⢀⠄⠀⠀⠀⠀⠀⢠⠀⠀⠤⣾⠖⢢⡸⣷⠿⠇⢷⠀
+⠀⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⢠⢫⣺⢹⣿⡌⡈⠐⢻⣿⣿⣿⣿⣾⡍⡩⣎⠂⡳⡐⠎⠀⣻⣿⣷⣟⠪⠷⠏⠀⠀⠀⠀⢠⡆⠀⠀⠀⠀⠀⠀⣰⡧⣼⣴⣿⡜⠃⣤⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠀⣧⣫⡻⣿⣆⠂⠀⣷⡛⠗⣿⣿⣗⢠⡅⠀⠠⠉⠀⡎⣼⠛⣿⡷⣬⠀⡑⠀⠀⢀⣼⣿⣧⡄⠀⠀⠀⠀⣼⡟⠱⣿⢦⠌⣱⣦⣾⣿⣄
+⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠈⠦⡁⠐⠘⢿⣷⣫⣿⣷⣄⢹⣷⡌⠙⠽⠿⡴⠀⠀⠀⠀⠀⠀⡂⠀⠵⠀⠀⠀⠀⡎⠡⠸⣿⣿⡿⠀⠀⡀⠂⠘⡛⠁⡵⢿⠁⠓⠽⠿⢿⣿⣿
+⠀⠀⠀⠀⠈⢂⡀⣀⢀⠀⠀⢀⡀⠐⡈⠀⠀⠉⢻⣷⡹⣿⣟⣿⣿⣷⡄⠑⠈⠠⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⡀⠲⡃⠅⠄⣌⢿⢟⣏⢰⡺⠵⢗⡄⢀⠀⠃⠀⠀⢠⠀⠀⠀⠀⠈
+⠀⠀⠀⠀⠀⠀⠰⡖⡢⡑⠆⢤⠎⢈⠐⠀⠱⣀⠘⣿⣿⣟⣿⣿⣛⡙⢪⡄⠀⠖⠀⠀⠀⠀⠀⠀⠀⢄⢇⠠⣼⢺⢂⡚⠀⢽⣿⡯⢿⡇⢈⢲⢮⠛⣺⡄⠀⣠⡾⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠐⣩⣗⡄⠊⢦⠂⠢⠀⠱⢂⢜⢿⣿⣣⣽⣯⢶⢁⢻⣌⠀⠀⠀⠀⠀⠀⠀⠀⠺⠀⠀⢿⣷⣅⢏⠦⠏⡿⣷⡠⢁⠢⠘⡇⡰⠹⣄⢿⡿⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⢩⠿⡄⠀⠃⡉⠀⠀⠀⠀⢼⣿⣿⣽⣝⣷⣆⡰⣿⡆⠀⠀⠀⠀⠠⢤⣀⡶⡂⢮⣾⡿⣿⠆⡡⠀⡠⡙⠻⣀⡀⠀⣽⠀⠀⡟⣻⠀⠀⠀⠀⠀⠀⠀⠀
+⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠾⣄⡀⠈⠀⠀⠁⠀⠀⠘⢟⢿⣿⣿⣿⣾⣯⣾⣿⣷⡠⠐⢷⣵⡇⣹⡼⡘⢿⣿⣿⣦⡈⢠⡠⡬⢠⣿⢿⣦⣯⠀⠈⢏⠈⠀⠀⠀⠀⠀⠀⠀⠀
+⠈⠠⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡨⠫⢆⠑⢀⠀⠀⠀⠀⠀⠈⢻⢻⣿⣿⣿⣿⡛⢙⣿⣧⠨⠙⢯⡧⣃⣣⢹⣿⡏⢏⠪⡁⢻⠡⠀⣫⡛⣎⡉⠀⠈⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠊⠳⣿⡶⡀⡀⠀⠀⠀⠀⠂⢄⢈⠣⠈⠀⣣⡀⠀⠀⠀⠀⠀⠈⢳⡵⡙⢿⣿⣗⡀⠈⣻⣷⣤⠹⣯⠁⢌⠀⠻⢯⠀⠀⠀⣀⠱⡌⣗⣝⣝⢧⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⠺⢟⢮⣮⣪⣲⣠⣄⡄⠂⡵⢈⡙⠃⠲⠼⣦⡀⣀⣀⡀⠀⠻⣿⣶⠀⠙⠿⣿⣶⣬⣿⡎⢷⠘⠧⠀⠄⠀⠄⠁⠀⠠⡘⢡⠺⡿⣑⣷⠤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣻⣦⡀⢀⡈⠒⢏⢓⢧⡉⠻⣿⣷⣶⣦⣌⠠⠀⡠⡙⢿⣮⣻⢿⣮⡙⢬⣙⢷⣤⣱⢽⣿⠿⠻⢿⡘⠇⠀⠀⠙⠂⠀⠀⢀⠀⠁⢱⠀⡷⡣⣿⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⡀⢘⢟⡷⣿⢦⡊⢝⣦⡙⣯⣦⣍⠹⡛⠿⠷⣦⣔⢮⠧⣻⣷⣵⡙⢻⣾⣿⣿⡿⢿⣿⣿⣇⠀⠀⠙⢄⠀⠀⠀⠀⠀⠄⠀⢱⣄⠎⡹⣧⠐⢹⡄⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠌⠳⢵⠼⣊⢟⣿⣿⣿⣟⣕⠻⣝⢦⡘⠓⢦⣫⡿⠱⡱⡿⣻⡻⣿⣿⠯⣿⣿⡧⠀⠉⠻⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⡮⡃⡙⠄⠻⡖⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠈⠂⠂⠉⠙⢳⡝⣿⣿⣿⣯⠂⡌⠙⡟⡗⡄⣭⢳⡄⠉⡝⢣⡕⠂⡍⠃⠈⢻⣿⡆⠀⠀⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠁⡄⠀⣵⡇⢰⠈⠁⠐⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⠂⠠⠀⢀⠐⡉⠛⠝⣆⡄⠀⠀⠑⠠⢨⢉⠛⠛⠂⠉⠊⠤⣩⢚⠀⠀⠈⠛⠄⠀⠀⠀⠀⠀⠀⠀⠀⠐⣆⡀⠀⢨⣺⣮⣧⠘⣥⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠁⢅⠀⠀⠀⠀⠁⠀⢄⡀⠄⠀⠐⠄⠀⠑⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠘⣾⣦⣼⣫⣿⣿⣇⢳⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠂⠀⠀⠀⠀⠀⠀⠈⠢⠀⠀⠀⣪⢂⡀⣀⠀⠠⡀⠀⠠⡀⠀⢉⠢⣄⡀⠭⠻⣿⣿⡞⠉⠉⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢙⠺⣷⣦⣑⠤⣄⡙⢦⡀⣤⡑⠯⣗⡁⢌⠛⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠨⠙⠻⢿⣿⣶⣽⣞⡽⣷⡕⠝⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠊⢔⡉⢟⣿⣷⡺⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⡀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⡀⣶⠀⠀⡆⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀
+      </pre>
+    </section>
+
+    <section class="epigraph">
+      <p class="quote">"Isn't it strange the way the wind makes inanimate objects move?"</p>
+      <p class="attribution">— Gustave Meyrinck, <em>The Golem</em></p>
+    </section>
+
+    <section class="body-copy">
+      <p>
+        Our lives are increasingly entangled with ubiquitous, 'smart' technical systems.
+        Yet they can feel strangely autonomous, even slightly alien: an apparatus seems
+        to possess a will of its own, or an unseen intelligence appears to be watching.
+      </p>
+
+      <p>
+        Drawing on Mark Fisher’s writings in <em>The Weird and the Eerie</em>,
+        <span class="red">&lt;MACHINES_00&gt;</span> invites emerging media artists,
+        creative technologists and computational designers to make and exhibit
+        hardware artefacts exploring hauntology, possession, high weirdness, and the
+        unsettling edge between the living and non-living.
+
+	
+      </p>
+
+<p>
+The open call requires that applicants understand the following:<br><br>
+1. This is an exhibition requiring the building of hardware technical systems.<br>
+2. The space is extremely limited to small, interactive artifacts.<br>
+3. While there is flexibility regarding the overall complexity of the final artifact, the open call is not
+interested in purely craft/found object work.<br>
+4. Only interactive systems will be accepted.<br>
+5. This is not an open call for professional media artists, creative technologists or computational designers with 3+ years of experience and/or significant achievements.<br>
+6. The final decision of acceptance rests on the curation team regarding appropriateness of project to the call details. <br>
+7. There will be a limit of only 9 exhibitors as it is the first open call.<br>
+8. Basic power and display technology will be provided, but the fidelity of final work rests on the exhibitor.
+
+</p>
+
+      <p>
+        APPLY TO &lt;MACHINES_00&gt; AS AN EXHIBITOR
+        <a href="https://forms.gle/HKR7oP5NsRDqq29i8" target="_blank" rel="noopener noreferrer">HERE</a>
+<br>
+DEADLINE: 31ST OCTOBER<br><br>
+<p> Read "The Weird and the Eerie" by Mark Fisher <a href = 'https://manetas.com/readbooks/the-weird-and-the-eerie_compress.pdf'> here.</a><br><br>
+<a href='https://possiblemachines.github.io'> Back to main </a>
+      </p>
+
+
+    </section>
+  </main>
+</body>
+</html>
